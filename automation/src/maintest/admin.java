@@ -33,8 +33,8 @@ public class admin {
 			POM s= new POM();
 			
 			//Login in username
-		    driver.findElement(s.Username).sendKeys("admin@connectreseller.com");
-		    driver.findElement(s.Password).sendKeys("x4y93omx37gjn8h");
+		    driver.findElement(s.Username).sendKeys("email");
+		    driver.findElement(s.Password).sendKeys("test123");
 		    
 		    //Click on the sign in button
 		     driver.findElement(s.Remember_me).click();
