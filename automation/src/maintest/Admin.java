@@ -27,10 +27,10 @@ public class Admin {
 		  driver.manage().window().maximize();
 		  
 		  //Username input
-		  Login_ele.username(driver).sendKeys("rohit.shelke.glb@connectreseller.com");
+		  Login_ele.username(driver).sendKeys("email");
 		  
 		  //Password input
-		  Login_ele.password(driver).sendKeys("RohitS@123");
+		  Login_ele.password(driver).sendKeys("test@123");
 		  
 		  //Remember me
 		  Login_ele.rememberme(driver).click();
@@ -135,56 +135,56 @@ public class Admin {
 	  
 	  Thread.sleep(1000);
 	        
-//	      //A record
-//	  Login_ele.DNSmanage(driver).click();
-//	        Login_ele.host(driver).sendKeys("Hello");
-//	        Login_ele.ipv4(driver).sendKeys("203.64.22.1");
-//	        Login_ele.recordbtn(driver).click();
-//	        System.out.println("A record added successfully");
-//	        Thread.sleep(1000);
-//	        
-//	        //AAAA record
-//	        Login_ele.AAAA(driver).click();
-//	        Login_ele.host(driver).sendKeys("hello");
-//	        Login_ele.ipv6(driver).sendKeys("2001:db8:1234::f350:2256:f3dd");
-//	        Login_ele.recordbtn(driver).click();
-//	        System.out.println("AAAA Record added successfully");
-//	        Thread.sleep(1000);
-//	        
-//	        //MX Record
-//	        Login_ele.MX(driver).click();
-//	        Login_ele.MXzone(driver).sendKeys("Hello");
-//	        String textToCopy = Login_ele.getTextFromSpan();
-//	        if (textToCopy.startsWith(".")) {
-//	            textToCopy = textToCopy.substring(1);
-//	        }
-//           wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='value']")));
-//           // Paste the text
-//           Login_ele.pasteTextIntoTargetInput(driver, textToCopy);
-//            Login_ele.MXTTL(driver).sendKeys("72321");
-//            Login_ele.MXpriority(driver).sendKeys("10");
-//            Login_ele.Addmx(driver).click();
-//            System.out.println("MX record added successfully");
-//            System.out.println("AAAA Record added successfully");
-//	        Thread.sleep(1000);
-//	        
-//            //Cname Record
-//            Login_ele.Cname(driver).click();
-//            Login_ele.hostCname(driver).sendKeys("hello");
-//            Login_ele.copyAndPasteCname(driver);
-//            Login_ele.Cnamerecord(driver).click();
-//            System.out.println("CName record added successfully");
-//            System.out.println("AAAA Record added successfully");
-//	        Thread.sleep(1000); 
-//	        
-//	        //TXT record
-//            Login_ele.TXT(driver).click();
-//            Login_ele.host(driver).sendKeys("@");
-//            Login_ele.TXTvalue(driver).sendKeys("b743aa911101ca1f1c1c665b658ec6ec9b11b9eb3ac7160d0c9dbb2c425fada");
-//            Login_ele.Cnamerecord(driver).click();
-//            System.out.println("TXT record added successfully");
-//            System.out.println("AAAA Record added successfully");
-//	        Thread.sleep(1000);
+	      //A record
+	  Login_ele.DNSmanage(driver).click();
+	        Login_ele.host(driver).sendKeys("Hello");
+	        Login_ele.ipv4(driver).sendKeys("203.64.22.1");
+	        Login_ele.recordbtn(driver).click();
+	        System.out.println("A record added successfully");
+	        Thread.sleep(1000);
+	        
+	        //AAAA record
+	        Login_ele.AAAA(driver).click();
+	        Login_ele.host(driver).sendKeys("hello");
+	        Login_ele.ipv6(driver).sendKeys("2001:db8:1234::f350:2256:f3dd");
+	        Login_ele.recordbtn(driver).click();
+	        System.out.println("AAAA Record added successfully");
+	        Thread.sleep(1000);
+	        
+	        //MX Record
+	        Login_ele.MX(driver).click();
+	        Login_ele.MXzone(driver).sendKeys("Hello");
+	        String textToCopy = Login_ele.getTextFromSpan();
+	        if (textToCopy.startsWith(".")) {
+	            textToCopy = textToCopy.substring(1);
+	        }
+          wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='value']")));
+          // Paste the text
+          Login_ele.pasteTextIntoTargetInput(driver, textToCopy);
+           Login_ele.MXTTL(driver).sendKeys("72321");
+           Login_ele.MXpriority(driver).sendKeys("10");
+           Login_ele.Addmx(driver).click();
+           System.out.println("MX record added successfully");
+           System.out.println("AAAA Record added successfully");
+	        Thread.sleep(1000);
+	        
+           //Cname Record
+           Login_ele.Cname(driver).click();
+           Login_ele.hostCname(driver).sendKeys("hello");
+           Login_ele.copyAndPasteCname(driver);
+           Login_ele.Cnamerecord(driver).click();
+           System.out.println("CName record added successfully");
+           System.out.println("AAAA Record added successfully");
+	        Thread.sleep(1000); 
+	        
+	        //TXT record
+           Login_ele.TXT(driver).click();
+           Login_ele.host(driver).sendKeys("@");
+           Login_ele.TXTvalue(driver).sendKeys("b743aa911101ca1f1c1c665b658ec6ec9b11b9eb3ac7160d0c9dbb2c425fada");
+           Login_ele.Cnamerecord(driver).click();
+           System.out.println("TXT record added successfully");
+           System.out.println("AAAA Record added successfully");
+	        Thread.sleep(1000);
 	        
             //More action
             Login_ele.moreaction(driver).click();
@@ -300,64 +300,64 @@ public class Admin {
 		  		 Login_ele.clickFirstreseller();
 		  		 Thread.sleep(5000);
 		  		 
-		    	//Add funds to reseller
-	    	//Credit Advice
-//		    	Login_ele.addfund(driver).click();
-//		    	Login_ele.Amount(driver).click();
-//		    	Login_ele.Amount(driver).clear();
-//		    	Login_ele.Amount(driver).sendKeys("1");
-//		    	Login_ele.desc(driver).sendKeys("test");
-//		    	Login_ele.type(driver).click();
-//		    	Thread.sleep(1000);
-//		    	Login_ele.creditadvice(driver).click();
-//		    	Login_ele.proceed(driver).click();
-//		    	System.out.println("Credit Advice is added");
-//		    	Thread.sleep(1000);
-//		    	
-//		    	//Credit memo
-//		    	Login_ele.Amount(driver).click();
-//		    	Login_ele.Amount(driver).clear();
-//		    	Login_ele.Amount(driver).sendKeys("1");
-//		    	Login_ele.desc(driver).sendKeys("test");
-//		    	Login_ele.type(driver).click();
-//		    	Login_ele.creditmemo(driver).click();
-//		    	Login_ele.proceed(driver).click();
-//		    	System.out.println("Credit memo is added");
-//		    	Thread.sleep(1000);
-//		    	
-//		    	//debit note
-//		    	Login_ele.Amount(driver).click();
-//		    	Login_ele.Amount(driver).clear();
-//		    	Login_ele.Amount(driver).sendKeys("1");
-//		    	Login_ele.desc(driver).sendKeys("test");
-//		    	Login_ele.type(driver).click();
-//		    	Login_ele.debit(driver).click();
-//		    	Login_ele.proceed(driver).click();
-//		    	System.out.println("Debit note is added");
-//		    	Thread.sleep(1000);
-//		    	
-//		    	//receipt
-//		    	Login_ele.Amount(driver).click();
-//		    	Login_ele.Amount(driver).clear();
-//		    	Login_ele.Amount(driver).sendKeys("1");
-//		    	Login_ele.desc(driver).sendKeys("test");
-//		    	Login_ele.type(driver).click();
-//		    	Login_ele.receipt(driver).click();
-//		    	Login_ele.proceed(driver).click();
-//		    	System.out.println("Receipt is added");
-//		    	Thread.sleep(1000);
-//		
-//		    	//purchase
-//		    	Login_ele.Amount(driver).click();
-//		    	Login_ele.Amount(driver).clear();
-//	    	    Login_ele.Amount(driver).sendKeys("1");
-//	    	    Login_ele.desc(driver).sendKeys("test");
-//	    	    Login_ele.type(driver).click();
-//		    	Login_ele.purchase(driver).click();
-//	    	    Login_ele.proceed(driver).click();
-//	    	    System.out.println("Purchase is added");
-//		    	Thread.sleep(1000);
-//		  		 
+		    	Add funds to reseller
+	    	Credit Advice
+		    	Login_ele.addfund(driver).click();
+		    	Login_ele.Amount(driver).click();
+		    	Login_ele.Amount(driver).clear();
+		    	Login_ele.Amount(driver).sendKeys("1");
+		    	Login_ele.desc(driver).sendKeys("test");
+		    	Login_ele.type(driver).click();
+		    	Thread.sleep(1000);
+		    	Login_ele.creditadvice(driver).click();
+		    	Login_ele.proceed(driver).click();
+		    	System.out.println("Credit Advice is added");
+		    	Thread.sleep(1000);
+		    	
+		    	//Credit memo
+		    	Login_ele.Amount(driver).click();
+		    	Login_ele.Amount(driver).clear();
+		    	Login_ele.Amount(driver).sendKeys("1");
+		    	Login_ele.desc(driver).sendKeys("test");
+		    	Login_ele.type(driver).click();
+		    	Login_ele.creditmemo(driver).click();
+		    	Login_ele.proceed(driver).click();
+		    	System.out.println("Credit memo is added");
+		    	Thread.sleep(1000);
+		    	
+		    	//debit note
+		    	Login_ele.Amount(driver).click();
+		    	Login_ele.Amount(driver).clear();
+		    	Login_ele.Amount(driver).sendKeys("1");
+		    	Login_ele.desc(driver).sendKeys("test");
+		    	Login_ele.type(driver).click();
+		    	Login_ele.debit(driver).click();
+		    	Login_ele.proceed(driver).click();
+		    	System.out.println("Debit note is added");
+		    	Thread.sleep(1000);
+		    	
+		    	//receipt
+		    	Login_ele.Amount(driver).click();
+		    	Login_ele.Amount(driver).clear();
+		    	Login_ele.Amount(driver).sendKeys("1");
+		    	Login_ele.desc(driver).sendKeys("test");
+		    	Login_ele.type(driver).click();
+		    	Login_ele.receipt(driver).click();
+		    	Login_ele.proceed(driver).click();
+		    	System.out.println("Receipt is added");
+		    	Thread.sleep(1000);
+		
+		    	//purchase
+		    	Login_ele.Amount(driver).click();
+		    	Login_ele.Amount(driver).clear();
+	    	    Login_ele.Amount(driver).sendKeys("1");
+	    	    Login_ele.desc(driver).sendKeys("test");
+	    	    Login_ele.type(driver).click();
+		    	Login_ele.purchase(driver).click();
+	    	    Login_ele.proceed(driver).click();
+	    	    System.out.println("Purchase is added");
+		    	Thread.sleep(1000);
+		  		 
 		  		 Login_ele.reseller(driver).click();
 		  		 Thread.sleep(5000);
 		  //Reseller list export
@@ -419,136 +419,136 @@ public class Admin {
 		         System.out.println("Pending Verification SSL list is displayed");
 		         Thread.sleep(1000);
 		         
-//		       //SSL cancel
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.cancel(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Cancel SSL list is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //SSL pending reissue
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.reissue(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Pending reissue SSL list is displayed");
-//		         Thread.sleep(1000);
+		       //SSL cancel
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.cancel(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Cancel SSL list is displayed");
+		         Thread.sleep(1000);
 		         
-//		         //SSL Pending renew
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.renew(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Pending Renew SSL list is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //SSL Active
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.SSLActive(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Active SSL list is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //SSL expire
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.sslexpire(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Expire SSL list is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //SSL revoke
-//		         Login_ele.sslstatus(driver).click();
-//		         Login_ele.revoke(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Revoke SSL list is displayed");
-//		         Thread.sleep(1000);
+		         //SSL pending reissue
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.reissue(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Pending reissue SSL list is displayed");
+		         Thread.sleep(1000);
 		         
-		         //Commercial SSL type
-//		         Login_ele.SSLclear(driver).click();
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.Commercial(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Commercial SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //trusted SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.trusted(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Trusted SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //Commercial wildcard SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.Comwildcard(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Commercial wildcard SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //trusted wildcard SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.trustwildcard(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Trusted wildcard SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //positive SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.positive(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Positive SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //positive wildcard SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.postwildcard(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Positive wildcard SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //	Sectigo SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.sectigo(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Sectigo SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //Sectigo wildcard SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.sectwildcard(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Sectigo wildcard SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //Instant SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.instant(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Instant SSL is displayed");
-//		         Thread.sleep(1000);
-//		         
-//		         //Instant wildcard SSL type
-//		         Login_ele.sslType(driver).click();
-//		         Login_ele.instwildcard(driver).click();
-//		         Login_ele.sslGO(driver).click();
-//		         System.out.println("Instant wildcard SSL is displayed");
-//		         Thread.sleep(1000);
-//		         Login_ele.SSLclear(driver).click();
-//		         Login_ele.sslGO(driver).click();        
-//		         //SSL list export
-//		         Thread.sleep(2000);
-//		         Login_ele.domainexport(driver).click();
-//		         System.out.println("SSL list exported successfully");
-//		         Thread.sleep(3000);
-//		         WebDriverWait SSL = new WebDriverWait(driver, 10);
-//		  		 //wait till element
-//      	  		 SSL.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'datatable-body-cell-label')]//button[contains(@class, 'btn')]")));
-//		        Login_ele.clickFirstIdLink(driver); 		        
-//		        Thread.sleep(2000);
-//		        Login_ele.SSL(driver).click();
-//		        WebDriverWait wait111 = new WebDriverWait(driver, 10);
-//		        WebElement sslButton = wait111.until(ExpectedConditions.visibilityOfElementLocated(
-//		                By.xpath("//div[contains(@class, 'datatable-body-cell-label')]//button[contains(@class, 'btn')]")
-//		        ));
-//		        sslButton.click(); // Interact immediately after locating
+		         //SSL Pending renew
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.renew(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Pending Renew SSL list is displayed");
+		         Thread.sleep(1000);
+		         
+		         //SSL Active
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.SSLActive(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Active SSL list is displayed");
+		         Thread.sleep(1000);
+		         
+		         //SSL expire
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.sslexpire(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Expire SSL list is displayed");
+		         Thread.sleep(1000);
+		         
+		         //SSL revoke
+		         Login_ele.sslstatus(driver).click();
+		         Login_ele.revoke(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Revoke SSL list is displayed");
+		         Thread.sleep(1000);
+		         
+		         Commercial SSL type
+		         Login_ele.SSLclear(driver).click();
+		         Login_ele.sslType(driver).click();
+		         Login_ele.Commercial(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Commercial SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //trusted SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.trusted(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Trusted SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //Commercial wildcard SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.Comwildcard(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Commercial wildcard SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //trusted wildcard SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.trustwildcard(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Trusted wildcard SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //positive SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.positive(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Positive SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //positive wildcard SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.postwildcard(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Positive wildcard SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //	Sectigo SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.sectigo(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Sectigo SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //Sectigo wildcard SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.sectwildcard(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Sectigo wildcard SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //Instant SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.instant(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Instant SSL is displayed");
+		         Thread.sleep(1000);
+		         
+		         //Instant wildcard SSL type
+		         Login_ele.sslType(driver).click();
+		         Login_ele.instwildcard(driver).click();
+		         Login_ele.sslGO(driver).click();
+		         System.out.println("Instant wildcard SSL is displayed");
+		         Thread.sleep(1000);
+		         Login_ele.SSLclear(driver).click();
+		         Login_ele.sslGO(driver).click();        
+		         //SSL list export
+		         Thread.sleep(2000);
+		         Login_ele.domainexport(driver).click();
+		         System.out.println("SSL list exported successfully");
+		         Thread.sleep(3000);
+		         WebDriverWait SSL = new WebDriverWait(driver, 10);
+		  		 //wait till element
+     	  		 SSL.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class, 'datatable-body-cell-label')]//button[contains(@class, 'btn')]")));
+		        Login_ele.clickFirstIdLink(driver); 		        
+		        Thread.sleep(2000);
+		        Login_ele.SSL(driver).click();
+		        WebDriverWait wait111 = new WebDriverWait(driver, 10);
+		        WebElement sslButton = wait111.until(ExpectedConditions.visibilityOfElementLocated(
+		                By.xpath("//div[contains(@class, 'datatable-body-cell-label')]//button[contains(@class, 'btn')]")
+		        ));
+		        sslButton.click(); // Interact immediately after locating
 
 		        
 		  //After market domain registration 
@@ -716,25 +716,25 @@ public class Admin {
 		  Login_ele.getreport(driver).click();
 		  System.out.println("Requested Reseller Details report");
 		  
-//		  //Report customer detail
-//		  Login_ele.reportlist(driver).click();
-//		  Thread.sleep(1000);
-//		  Login_ele.customerdetail(driver).click();
-//		  Login_ele.emailaddress(driver).sendKeys("swativishwakarma.vertoz@gmail.com\n"
-//		  		+ "");
-//		  Thread.sleep(30000);
-//		  Login_ele.getreport(driver).click();
-//		  System.out.println("Requested Customer Details report");
+		  //Report customer detail
+		  Login_ele.reportlist(driver).click();
+		  Thread.sleep(1000);
+		  Login_ele.customerdetail(driver).click();
+		  Login_ele.emailaddress(driver).sendKeys("swativishwakarma.vertoz@gmail.com\n"
+		  		+ "");
+		  Thread.sleep(30000);
+		  Login_ele.getreport(driver).click();
+		  System.out.println("Requested Customer Details report");
 		  
-//		  //Report transaction details
-//		  Login_ele.reportlist(driver).click();
-//		  Thread.sleep(1000);
-//		  Login_ele.transactiondetail(driver).click();
-//		  Login_ele.emailaddress(driver).sendKeys("swativishwakarma.vertoz@gmail.com\n"
-//		  		+ "");
-//		  Thread.sleep(30000);
-//		  Login_ele.getreport(driver).click();
-//		  System.out.println("Requested Transaction Details report");
+		  //Report transaction details
+		  Login_ele.reportlist(driver).click();
+		  Thread.sleep(1000);
+		  Login_ele.transactiondetail(driver).click();
+		  Login_ele.emailaddress(driver).sendKeys("swativishwakarma.vertoz@gmail.com\n"
+		  		+ "");
+		  Thread.sleep(30000);
+		  Login_ele.getreport(driver).click();
+		  System.out.println("Requested Transaction Details report");
 		  
 		  //pending order
 		  Login_ele.pendingorder(driver).click();
