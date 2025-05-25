@@ -1,4 +1,4 @@
-package maintest;
+ilpackage maintest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -30,7 +30,7 @@ public class Reseller {
 			RESELLERPOM r= new RESELLERPOM();
 			
 			//Login in username
-		    driver.findElement(r.Username).sendKeys("swati1028@gmail.com");
+		    driver.findElement(r.Username).sendKeys("email");
 		    driver.findElement(r.Password).sendKeys("Test@123");
 		    
 		    //Click on the sign in button
