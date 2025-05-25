@@ -20,10 +20,10 @@ public class Signin_main {
         driver.manage().window().maximize();
 
         // Username input
-        Login_ele.username(driver).sendKeys("swati.vishwkarma.glb@connectreseller.com");
+        Login_ele.username(driver).sendKeys("email");
 
         // Password input
-        Login_ele.password(driver).sendKeys("rfLP4Sv7[~TpG_/8");
+        Login_ele.password(driver).sendKeys("test123");
 
         // Remember me
         Login_ele.rememberme(driver).click();
